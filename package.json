@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "jade": "jade --watch --pretty lib/avengers.jade --out .",
+    "styl": "stylus --use nib --compress --watch lib/app.styl --out public/css",
+    "serve": "http-server . ",
+      "babel":"babel --watch lib --out-dir public"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

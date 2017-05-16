@@ -1,0 +1,18 @@
+section(class="Layout")
+    section(class="Layout-antagonist") 
+        each card in [1,2,3,4,5]
+            include ../card/template.jade
+    section(class="Layout-main")
+        div(class="Layout-status")
+            each name in ["JESS", "CASU"]
+                include ../status/template.jade
+
+        div(class="Layout-battle")
+                include ../battle/template.jade
+        div(class="Layout-phases")
+                - text = "GRAN ATAQUE- RESTA 5000 PTS"
+                include ../phases/template.jade
+    section(class="Layout-player") 
+        each card in [1,2,3,4,5]
+            include ../card/template.jade
+        
